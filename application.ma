@@ -1,0 +1,1 @@
+{"RootDirectory":"G:\\education","GitAddress":"git@github.com:dayAndnight2018/te-education.git","PostDirectory":"G:\\education\\docs"}
