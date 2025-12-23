@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="Description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../css/vue.css">
+        <script src="../js/vue.js"></script>
+        <!-- Jquery -->
+        <script src="../js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="window" :style="displayBtn">
+                <div class="mainWindow">
+                    <img class="previewImage" :src="imageIcon">
+                    <span class="closeBtn" @click="closeWindow">×</span>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            window.$docsify = {
+                name: '',
+                repo: '',
+                loadSidebar: true,
+                coverpage: true,
+                search: {
+                    paths: 'auto',
+                    placeholder: '搜索',
+                    noData: '找不到结果',
+                    depth: 3
+                },
+                count: {
+                    countable:true,
+                    fontsize:'0.9em',
+                    color:'rgb(90,90,90)',
+                    language:'chinese' 
+                }
+            }
+            
+
+            var vue = new Vue({
+                el: '#app',
+                data:{
+                    imageIcon: undefined,
+                    active: false,
+                },methods: {
+                    closeWindow: function () {
+                        this.active = !this.active;
+                        this.imageIcon = undefined;
+                    }
+                },
+                computed: {
+                    displayBtn() {
+                        return {
+                            '--display-btn': this.active ? 'block' : 'none'
+                        }
+                    },
+                    displayImage() {
+                        return {
+                            '--display-image': 'url(' + this.imageIcon + ')'
+                        }
+                    }
+                }
+            });
+
+            $(function(){
+                $("img").each(ele=>{
+                    $(ele).click(function(){
+                        vue.imageIcon = $(this).attr("src");
+                        vue.active = true;
+                    })
+                });
+        
+            });
+        </script>
+        <!-- Docsify v4 -->
+        <script src="../js/docsify.js"></script>
+        <!-- emoji -->
+        <script src="../js/emoji.js"></script>
+        <!-- search box -->
+        <script src="../js/search.js"></script>
+        <!-- image -->
+        <script src="../js/zoom.js"></script>
+        <!-- image -->
+        <script src="../js/zoom-en.js"></script>
+        <!-- copy code -->
+        <script src="../js/copy-code.js"></script>
+        <!-- words count -->
+        <script src="../js/count.js"></script>
+        <!-- code highlight -->
+        <script src="../js/prism-java.js"></script>
+        <script src="../js/speech.js"></script>
+    </body>
+</html>
