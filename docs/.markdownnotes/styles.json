@@ -436,6 +436,29 @@
       "overline": false,
       "decorationColor": null,
       "customCss": null
+    },
+    "strong": {
+      "fontFamily": null,
+      "fontSize": null,
+      "fontWeight": "bold",
+      "fontStyle": null,
+      "color": "#e06c00",
+      "backgroundColor": null,
+      "padding": null,
+      "margin": null,
+      "lineHeight": null,
+      "textAlign": null,
+      "textIndent": null,
+      "dropCap": false,
+      "border": null,
+      "borderRadius": null,
+      "underline": false,
+      "doubleUnderline": false,
+      "wavy": false,
+      "strikethrough": false,
+      "overline": false,
+      "decorationColor": null,
+      "customCss": null
     }
   },
   "globalCss": null
