@@ -21,6 +21,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "border-bottom:2px solid #e1e4e8;"
     },
     "h2": {
@@ -44,6 +45,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "border-bottom:1px solid #e1e4e8;"
     },
     "h3": {
@@ -67,6 +69,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "h4": {
@@ -90,6 +93,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "h5": {
@@ -113,6 +117,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "h6": {
@@ -136,6 +141,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "p": {
@@ -159,6 +165,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "blockquote": {
@@ -182,6 +189,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "border-left:4px solid #0366d6;"
     },
     "code": {
@@ -205,6 +213,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "pre": {
@@ -228,6 +237,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "a": {
@@ -251,6 +261,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "table": {
@@ -274,6 +285,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "border-collapse:collapse;width:100%;"
     },
     "th": {
@@ -297,6 +309,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "td": {
@@ -320,6 +333,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "hr": {
@@ -343,6 +357,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "border:none;border-top:2px solid #e1e4e8;"
     },
     "img": {
@@ -366,6 +381,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": "max-width:100%;height:auto;"
     },
     "ul": {
@@ -389,6 +405,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "ol": {
@@ -412,6 +429,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "li": {
@@ -435,6 +453,7 @@
       "strikethrough": false,
       "overline": false,
       "decorationColor": null,
+      "decorationThickness": null,
       "customCss": null
     },
     "strong": {
@@ -454,10 +473,11 @@
       "borderRadius": null,
       "underline": false,
       "doubleUnderline": false,
-      "wavy": false,
+      "wavy": true,
       "strikethrough": false,
       "overline": false,
-      "decorationColor": null,
+      "decorationColor": "#07ca1e",
+      "decorationThickness": "0.1rem",
       "customCss": null
     }
   },
